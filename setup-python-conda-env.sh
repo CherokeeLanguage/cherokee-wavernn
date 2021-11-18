@@ -16,4 +16,6 @@ conda activate cherokee-wavernn
 
 pip install -e WaveRNN
 
+conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
+
 exit 0
