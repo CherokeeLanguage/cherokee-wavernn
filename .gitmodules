@@ -1,0 +1,9 @@
+[submodule "WaveRNN"]
+	path = WaveRNN
+	url = ../../CherokeeLanguage/WaveRNN
+[submodule "cherokee-audio-data"]
+	path = cherokee-audio-data
+	url = ../../CherokeeLanguage/cherokee-audio-data.git
+[submodule "other-audio-data"]
+	path = other-audio-data
+	url = ../../CherokeeLanguage/other-audio-data.git
