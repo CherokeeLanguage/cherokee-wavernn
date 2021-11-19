@@ -14,7 +14,7 @@ voc_model_id = 'chr_en_comvoi'
 # Settings for all models
 sample_rate = 22050
 # n_fft = 2048
-fft_bins = 1106  # n_fft // 2 + 1
+fft_bins = 1102  # n_fft // 2 + 1
 n_fft = (fft_bins - 1) * 2
 num_mels = 80
 hop_length = 275                    # 12.5ms - in line with Tacotron 2 paper
