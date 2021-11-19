@@ -69,12 +69,24 @@ def main():
                 idx += 1
         bar.update(bar.currval + 1)
     bar.finish()
-    print("\n")
-    os.chdir("WaveRNN")
+
     cmd_list: list[str] = list()
+
+    print()
+    print("=== Creating MEL files")
+    cmd_list.append("python")
+    cmd_list.append("prepare_spectrograms.py")
+    subprocess.run(cmd_list, check=True)
+
+    print()
+    print("=== WaveRNN preprocess")
+    os.chdir("WaveRNN")
+    cmd_list.clear()
     cmd_list.append("python")
     cmd_list.append("scripts/preprocess.py")
     cmd_list.append("--data_root")
+    cmd_list.append("../dataset")
+    cmd_list.append("--output")
     cmd_list.append("../dataset")
     cmd_list.append("--hp_file")
     cmd_list.append("../hparams.py")

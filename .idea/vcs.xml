@@ -4,6 +4,7 @@
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/WaveRNN" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/cherokee-audio-data" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cherokee-audio-data-private" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/other-audio-data" vcs="Git" />
   </component>
 </project>
